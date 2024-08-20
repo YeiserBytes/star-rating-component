@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #E6E9FB;
+  --off-star: #E2E8F0;
+  --on-star: #FACC15;
+  --white: #ffffff;
+  --title-color: #0F172A;
+  --text-color: #374151;
+  --shadow-color: #ffffff66;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.title {
+  max-width: 30ch;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 1.5em;
+  color: var(--title-color);
+}
+
+.star {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--off-star);
+  height: 84px;
+  width: 84px;
+}
+
+.score {
+  display: flex;
+  gap: 2em;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  box-shadow: 10px 10px 4px var(--shadow-color);
+}
+
+#message {
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  max-width: 647px;
+  height: 54px;
+  text-align: center;
+}
+
+.selected {
+  color: var(--on-star);
+}
